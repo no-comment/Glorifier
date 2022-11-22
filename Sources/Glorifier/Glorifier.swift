@@ -12,7 +12,7 @@ public extension View {
     ///   - rotationIntensity: intensity of rotation effect
     ///   - shadowColor: color of the shadow
     ///   - shadowOffset: offset of the shadow
-    func glorified(duration: Double = 14, rotationIntensity: Double = 14, shadowColor: Color = .gray, shadowOffset: Double = 1 / 5) -> some View {
+    func glorified(duration: Double = 14, rotationIntensity: Double = 14, shadowColor: Color = .gray, shadowOffset: Double = 15) -> some View {
         // wrap in ZStack to fix preview; otherwise shadow won't move
         ZStack {
             self.modifier(GlorifierEffect(duration: duration,
@@ -29,7 +29,12 @@ struct Glorifier_Previews: PreviewProvider {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(.black)
                 .frame(width: 70, height: 70)
-                .glorified()
+                .glorified(duration: 2, rotationIntensity: 10, shadowColor: .green, shadowOffset: 20)
+
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.black)
+                .frame(width: 140, height: 140)
+                .glorified(rotationIntensity: 30)
 
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(.black)

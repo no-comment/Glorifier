@@ -6,10 +6,10 @@
 import SwiftUI
 
 struct GlorifierEffect: ViewModifier {
-    var duration: Double = 14
-    var rotationIntensity: Double = 10
-    var shadowColor: Color = .gray
-    var shadowOffset: Double = 1 / 5
+    let duration: Double
+    let rotationIntensity: Double
+    let shadowColor: Color
+    let shadowOffset: Double
 
     @State private var rad: Double = 0
     @State private var rotate: Bool = false
@@ -39,7 +39,7 @@ struct GlorifierEffect: ViewModifier {
                     .rotationEffect(.radians(rad + .pi))
             }
             .mask({ content })
-            .animatableShadow(state: rad, shadowOffset: size * shadowOffset, color: shadowColor, radius: size * shadowOffset / 2)
+            .animatableShadow(state: rad, shadowOffset: shadowOffset, color: shadowColor, radius: shadowOffset / 2)
             .rotation3DEffect(.degrees(rotate ? rotationIntensity : -rotationIntensity), axis: (x: 1.0, y: 0, z: 0))
             .animation(.easeInOut(duration: duration / 2).repeatForever(autoreverses: true), value: rotate)
             .rotation3DEffect(.degrees(rotate ? rotationIntensity : -rotationIntensity), axis: (x: 0, y: 1, z: 0))
