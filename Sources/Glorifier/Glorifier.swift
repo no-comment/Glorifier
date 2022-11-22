@@ -5,19 +5,27 @@
 
 import SwiftUI
 
-extension View {
-    public func glorified() -> some View {
-        self
-            .glossEffect()
-            .animatableShadow(state: 14, radius: 2)
+public extension View {
+    func glorified() -> some View {
+        // wrap in ZStack to fix preview; otherwise shadow won't move
+        ZStack {
+            self.modifier(GlorifierEffect())
+        }
     }
 }
 
 struct Glorifier_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .foregroundColor(.black)
-            .frame(width: 140, height: 140)
-            .glorified()
+        VStack(spacing: 100) {
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.black)
+                .frame(width: 70, height: 70)
+                .glorified()
+
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.black)
+                .frame(width: 140, height: 140)
+                .glorified()
+        }
     }
 }
