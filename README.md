@@ -6,6 +6,28 @@
   </picture>
 </p>
 
+## Preview
+
+
 ## Installation
 ### Swift Package Manager
 Add `https://github.com/no-comment/Glorifier.git` to your [Package Dependencies](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
+
+
+## Usage
+
+Just use the `.glorified()` modifier as you would use any other:
+
+```
+MyView()
+    .glorified()
+```
+
+There are 4 parameters:
+
+| **Parameter**       | **Type** | **Default Value** | **Description**                     |
+| ------------------- | -------- | ----------------- | ----------------------------------- |
+| `duration`          | `Double` | `15`              | Duration of a cycle in seconds      |
+| `rotationIntensity` | `Double` | `10`              | Intensity of the 3D rotation effect |
+| `shadowColor`       | `Color`  | `.gray`           | Color of the shadow                 |
+| `shadowOffset`      | `Double` | `15`              | Offset of the shadow                |
