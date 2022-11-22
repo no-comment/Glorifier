@@ -7,6 +7,8 @@
 </p>
 
 ## Preview
+Glorifier allows you to add a certain *bedazzle* to your view. It is a bit difficult to describe so just check it out yourself:
+![Simulator Screen Recording - iPhone 14 Pro - 2022-11-22 at 23 47 20](https://user-images.githubusercontent.com/31541782/203437388-4eb916f8-fe48-4b3d-ab6b-b8d229c1a4cf.gif)
 
 
 ## Installation
@@ -18,12 +20,12 @@ Add `https://github.com/no-comment/Glorifier.git` to your [Package Dependencies]
 
 Just use the `.glorified()` modifier as you would use any other:
 
-```
+```swift
 MyView()
     .glorified()
 ```
 
-There are 4 parameters:
+There are 4 parameters to further customize the effect:
 
 | **Parameter**       | **Type** | **Default Value** | **Description**                     |
 | ------------------- | -------- | ----------------- | ----------------------------------- |
