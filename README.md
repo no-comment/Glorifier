@@ -5,3 +5,7 @@
     <img alt="Glorifier" height="100" src="https://user-images.githubusercontent.com/31541782/203431367-9253aa36-4c60-4a7b-a02b-29b15965cd77.png">
   </picture>
 </p>
+
+## Installation
+### Swift Package Manager
+Add `https://github.com/no-comment/Glorifier.git` to your [Package Dependencies](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
