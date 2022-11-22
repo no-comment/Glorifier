@@ -9,10 +9,10 @@ public extension View {
     /// Adds Glorified Effect on View
     /// - Parameters:
     ///   - duration: number of seconds for one cycle
-    ///   - rotationIntensity: intensity of rotation effect
+    ///   - rotationIntensity: intensity of 3D rotation effect
     ///   - shadowColor: color of the shadow
     ///   - shadowOffset: offset of the shadow
-    func glorified(duration: Double = 14, rotationIntensity: Double = 14, shadowColor: Color = .gray, shadowOffset: Double = 15) -> some View {
+    func glorified(duration: Double = 15, rotationIntensity: Double = 10, shadowColor: Color = .gray, shadowOffset: Double = 15) -> some View {
         // wrap in ZStack to fix preview; otherwise shadow won't move
         ZStack {
             self.modifier(GlorifierEffect(duration: duration,
