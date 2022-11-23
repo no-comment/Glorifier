@@ -2,12 +2,12 @@
   <picture height="50">
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/31541782/203431445-d6ac4836-27b6-4d18-b48a-956483150c51.png">
     <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/31541782/203431367-9253aa36-4c60-4a7b-a02b-29b15965cd77.png">
-    <img alt="Glorifier" height="100" src="https://user-images.githubusercontent.com/31541782/203431367-9253aa36-4c60-4a7b-a02b-29b15965cd77.png">
+    <img alt="Glorifier" height="75" src="https://user-images.githubusercontent.com/31541782/203431367-9253aa36-4c60-4a7b-a02b-29b15965cd77.png">
   </picture>
 </p>
 
 ## Preview
-Glorifier allows you to add a certain *bedazzle* to your view. It is a bit difficult to describe so just check it out yourself:
+Glorifier allows you to add a certain *bedazzle* to your view by giving them a shiny spotlight effect:
 
 ![glorifier preview](https://user-images.githubusercontent.com/31541782/203437388-4eb916f8-fe48-4b3d-ab6b-b8d229c1a4cf.gif)
 
@@ -26,7 +26,7 @@ MyView()
     .glorified()
 ```
 
-There are 4 parameters to further customize the effect:
+There are five parameters to further customize the effect:
 
 | **Parameter**       | **Type** | **Default Value** | **Description**                                      |
 | ------------------- | -------- | ----------------- | ---------------------------------------------------- |
