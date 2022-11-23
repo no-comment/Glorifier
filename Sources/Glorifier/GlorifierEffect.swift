@@ -10,6 +10,7 @@ struct GlorifierEffect: ViewModifier {
     let rotationIntensity: Double
     let shadowColor: Color
     let shadowOffset: Double
+    let lightIntensity: Double
 
     @State private var rad: Double = 0
     @State private var rotate: Bool = false
@@ -29,7 +30,7 @@ struct GlorifierEffect: ViewModifier {
             .overlay {
                 Circle()
                     .fill(
-                        RadialGradient(colors: [.white.opacity(0.2), .clear],
+                        RadialGradient(colors: [.white.opacity(lightIntensity), .clear],
                                        center: .center,
                                        startRadius: 1,
                                        endRadius: self.size / 2)

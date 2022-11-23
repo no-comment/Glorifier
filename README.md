@@ -28,9 +28,10 @@ MyView()
 
 There are 4 parameters to further customize the effect:
 
-| **Parameter**       | **Type** | **Default Value** | **Description**                     |
-| ------------------- | -------- | ----------------- | ----------------------------------- |
-| `duration`          | `Double` | `15`              | Duration of a cycle in seconds      |
-| `rotationIntensity` | `Double` | `10`              | Intensity of the 3D rotation effect |
-| `shadowColor`       | `Color`  | `.gray`           | Color of the shadow                 |
-| `shadowOffset`      | `Double` | `15`              | Offset of the shadow                |
+| **Parameter**       | **Type** | **Default Value** | **Description**                                      |
+| ------------------- | -------- | ----------------- | ---------------------------------------------------- |
+| `duration`          | `Double` | `15`              | Duration of a cycle in seconds                       |
+| `rotationIntensity` | `Double` | `10`              | Intensity of the 3D rotation effect                  |
+| `shadowColor`       | `Color`  | `.gray`           | Color of the shadow                                  |
+| `shadowOffset`      | `Double` | `15`              | Offset of the shadow                                 |
+| `lightIntensity`    | `Double` | `0.2`             | Intensity of the light effect (between `0` and `1`)  |
